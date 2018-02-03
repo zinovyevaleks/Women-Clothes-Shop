@@ -1,0 +1,54 @@
+@import "variables.less";
+@import "mixins.less";
+
+.nav {
+    height: 114px;
+    margin-top: 61px;
+    display: flex;
+    justify-content: space-around;
+
+
+    &__menu {
+        .clean-list;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__item {
+
+    }
+
+    &__login {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+
+        > i {
+            margin-right: 10px;
+        }
+    }
+
+    &__basket {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        > i {
+            margin-right: 10px;
+        }
+    }
+
+    &__search {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .search__button {
+            background-color: white;
+            border: 1px solid #959595;
+            height: 40px;
+            width: 40px;
+        }
+    }
+}

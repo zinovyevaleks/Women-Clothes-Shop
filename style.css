@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@media (min-width: 767px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+@media (min-width: 1920px) {
+  .container {
+    width: 1900px;
+  }
+}
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.col-1 {
+  width: 8.3333%;
+}
+.col-2 {
+  width: 16.6666%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.3333%;
+}
+.col-5 {
+  width: 41.6666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.3333%;
+}
+.col-8 {
+  width: 66.6666%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.3333%;
+}
+.col-11 {
+  width: 91.3333%;
+}
+.col-12 {
+  width: 100%;
+}
+.nav {
+  height: 114px;
+  margin-top: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.nav__login {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.nav__login > i {
+  margin-right: 10px;
+}
+.nav__basket {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav__basket > i {
+  margin-right: 10px;
+}
+.nav__search {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.nav__search .search__button {
+  background-color: white;
+  border: 1px solid #959595;
+  height: 40px;
+  width: 40px;
+}
+.header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 150px 160px 0;
+}
+.header__title {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 43px;
+}
+.header__description {
+  color: #606060;
+  font-size: 24px;
+  font-style: italic;
+  letter-spacing: 1.2px;
+  line-height: 35px;
+}
+.table {
+  background-color: #dbdbdb;
+  height: 834px;
+  margin: 0 auto;
+  width: 95%;
+}
+.table__row {
+  height: 33.333%;
+}
+.table .grey {
+  background-color: #bbbbbb;
+}
+.table .dark-grey {
+  background-color: #606060;
+}
+.table .light-grey {
+  background-color: #d0d0d0;
+}
+.table__cell {
+  color: white;
+  float: left;
+}
+.table__cell > h4,
+.table__cell p {
+  visibility: hidden;
+}
+.table__cell:hover {
+  background-color: black;
+  display: block;
+  opacity: 0.6;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.table__cell:hover > h4,
+.table__cell:hover p {
+  visibility: visible;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #e5e5e5;
+  font-family: Roboto;
+  color: #303030;
+}
+.container {
+  background-color: white;
+}
+.viewport {
+  margin: 0 auto;
+}
+.separation {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+}

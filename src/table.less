@@ -1,0 +1,50 @@
+@import "variables.less";
+@import "mixins.less";
+
+.table {
+    background-color:  #dbdbdb;
+    height: 834px;
+    margin: 0 auto;
+    width: 95%;
+
+    &__row {
+        height: 33.333%;
+    }
+
+     .grey {
+        background-color:  #bbbbbb;
+    }
+     .dark-grey {
+        background-color:  #606060;
+    }
+     .light-grey {
+        background-color:  #d0d0d0;
+    }
+
+    &__cell {
+        color: white;
+        float: left;
+
+        > h4, p {
+            visibility: hidden;
+        }
+    }
+
+    &__cell:hover {
+        background-color: black;
+        display: block;
+        opacity: 0.6;
+        transition: 2s;
+        align-items: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+        > h4, p {
+            visibility: visible;
+        }
+    }
+
+}
