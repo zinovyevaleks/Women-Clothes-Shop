@@ -1,0 +1,51 @@
+@import "variables.less";
+@import "mixins.less";
+
+
+.footer {
+    margin-top: 60px;
+    padding: 25px;
+
+    &__collection{
+
+        ul {
+            .clean-list;
+            font-weight: 400;
+            line-height: 23px;
+        }
+    }
+
+    &__shop {
+
+        border-left: 1px solid rgba(0, 0, 0, 0.1);;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);;
+
+        ul {
+            .clean-list;
+            font-weight: 400;
+            line-height: 23px;
+        }
+    }
+
+    &__social {
+        margin-top: 20px;
+
+        .social__icon {
+            font-size: 30px;
+            justify-content: center;
+
+            i {
+                margin-bottom: 30px;
+                margin-left: 30px;
+                margin-top: 30px;
+
+            }
+        }
+
+        .social__copyright {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+}
