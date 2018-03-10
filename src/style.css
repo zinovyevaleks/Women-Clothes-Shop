@@ -1,6 +1,5 @@
 .nav {
   height: 114px;
-  margin-top: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +19,25 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-left: 10px;
+}
+.nav__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #606060;
+  cursor: pointer;
+  height: 50px;
+}
+.nav__item:hover {
+  border-bottom: 1px solid red;
+  color: #303030;
+}
+.nav__item__active {
+  border-bottom: 1px solid red;
+  color: #303030;
 }
 .nav__login {
   -webkit-box-align: center;

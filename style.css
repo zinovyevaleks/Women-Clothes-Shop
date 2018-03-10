@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Infant|Open+Sans:300|Ubuntu+Condensed');
 @media (min-width: 767px) {
   .container {
     width: 750px;
@@ -86,7 +86,6 @@
 }
 .nav {
   height: 114px;
-  margin-top: 61px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,6 +105,25 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding-left: 10px;
+}
+.nav__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #606060;
+  cursor: pointer;
+  height: 50px;
+}
+.nav__item:hover {
+  border-bottom: 1px solid red;
+  color: #303030;
+}
+.nav__item__active {
+  border-bottom: 1px solid red;
+  color: #303030;
 }
 .nav__login {
   -webkit-box-align: center;
@@ -180,28 +198,31 @@
   height: 33.333%;
 }
 .table .grey {
-  background-color: #bbbbbb;
+  background-image: url(https://placeimg.com/300/300/people);
 }
 .table .dark-grey {
-  background-color: #606060;
+  background-image: url(https://placeimg.com/300/300/nature);
 }
 .table .light-grey {
-  background-color: #d0d0d0;
+  background-image: url(https://placeimg.com/300/300/tech);
 }
 .table__cell {
+  background-image: url(https://placeimg.com/300/300/arch);
   color: white;
   float: left;
+  -webkit-filter: opacity(65%);
+          filter: opacity(65%);
 }
 .table__cell > h4,
 .table__cell p {
   visibility: hidden;
 }
 .table__cell:hover {
-  background-color: black;
   display: block;
-  opacity: 0.6;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: 1s;
+  transition: 1s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -268,8 +289,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #e5e5e5;
-  font-family: Roboto;
+  font-family: 'Cormorant Infant', serif;
   color: #303030;
 }
 .container {

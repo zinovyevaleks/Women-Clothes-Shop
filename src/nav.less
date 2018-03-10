@@ -3,7 +3,7 @@
 
 .nav {
     height: 114px;
-    margin-top: 61px;
+    // margin-top: 61px;
     display: flex;
     justify-content: space-around;
 
@@ -17,8 +17,23 @@
     }
 
     &__item {
+        align-items: center;
+        display: flex;
+        color: @dark-grey;
+        cursor: pointer;
+        height: 50px;
 
+        &:hover {
+            border-bottom: 1px solid red;
+            color: #303030;
+        }
+
+        &__active {
+            border-bottom: 1px solid red;
+            color: #303030;
+        }
     }
+
 
     &__login {
         align-items: center;

@@ -12,18 +12,24 @@
     }
 
      .grey {
-        background-color:  #bbbbbb;
+        // background-color:  #bbbbbb;
+        background-image: url(https://placeimg.com/300/300/people);
     }
      .dark-grey {
-        background-color:  #606060;
+        // background-color:  #606060;
+        background-image: url(https://placeimg.com/300/300/nature);
     }
      .light-grey {
-        background-color:  #d0d0d0;
+        // background-color:  #d0d0d0;
+        background-image: url(https://placeimg.com/300/300/tech);
     }
 
     &__cell {
+        background-image: url(https://placeimg.com/300/300/arch);
         color: white;
         float: left;
+        // filter: blur(3px);
+        filter: opacity(65%);
 
         > h4, p {
             visibility: hidden;
@@ -31,10 +37,11 @@
     }
 
     &__cell:hover {
-        background-color: black;
+        // background-color: black;
         display: block;
-        opacity: 0.6;
-        transition: 2s;
+        filter: none;
+        // opacity: 0.6;
+        transition: 1s;
         align-items: center;
         color: white;
         display: flex;
